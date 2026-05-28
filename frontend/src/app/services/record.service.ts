@@ -10,7 +10,7 @@ import { AuthService } from './auth.service';
 export class RecordService {
   private http = inject(HttpClient);
   private authService = inject(AuthService);
-  private readonly API_URL = 'http://localhost:3000/api';
+  private readonly API_URL = 'https://angular-qmyv.onrender.com/api';
 
   getRecords(): Observable<Record[]> {
     const headers = this.authService.getAuthHeaders();

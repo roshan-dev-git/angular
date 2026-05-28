@@ -8,7 +8,7 @@ import { User, AuthResponse } from '../types';
 })
 export class AuthService {
   private http = inject(HttpClient);
-  private readonly API_URL = 'http://localhost:3000/api';
+  private readonly API_URL = 'https://angular-qmyv.onrender.com/api';
 
   // Signals for reactive application state
   readonly currentUser = signal<User | null>(null);
